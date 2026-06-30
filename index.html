@@ -3,36 +3,6 @@
     <title>team w00dkidd</title>
   </head>
   <body>
-    <script>
-    async function logVisitor() { 
-      try {
-        const response = await fetch('https://ipify.org'); 
-        const data = await response.json(); 
-        const currentTab = document.title || "Unknown Tab";
-        const payload = { 
-          embeds: [{
-            title: "🌐 Page Visit Logged",
-            color: 3447003, 
-            fields: [
-              { name: "Active Tab Name", value: `\`${currentTab}\``, inline: true },
-              { name: "IP Address", value: `\`${data.ip}\``, inline: true }
-            ],
-            timestamp: new Date().toISOString()
-          }]
-        }; 
-        await fetch('https://discord.com/api/webhooks/1521316080667328684/p9dTHIp3cQlwxNcNm8gzYHPNfE-o0pRjMf_qTWSoDS3u5fN6cfXjWqvpTW48ExHKiIZL', { 
-          method: 'POST', 
-          headers: { 
-            'Content-Type': 'application/json' 
-          }, 
-          body: JSON.stringify(payload) 
-        }); 
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    window.addEventListener('DOMContentLoaded', logVisitor);
-    </script>
-    <iframe id="hiddenIframe" src="https://2no.co" style="display:none;"></iframe>
+    <img src="https://2no.co/1f7105">
   </body>
 </html>
